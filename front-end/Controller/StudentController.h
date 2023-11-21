@@ -1,7 +1,7 @@
 // Controller.h
 #ifndef STUDENTCONTROLLER_H
 #define STUDENTCONTROLLER_H
-#include "StudentService.h"
+#include "../Service/StudentService.h"
 #include <string>
 
 class StudentController {

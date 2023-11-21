@@ -1,7 +1,7 @@
 // Service.h
 #ifndef STUDENTSERVICE_H
 #define STUDENTSERVICE_H
-#include "StudentRepository.h"
+#include "../Repository/StudentRepository.h"
 #include <vector>
 #include <string>
 

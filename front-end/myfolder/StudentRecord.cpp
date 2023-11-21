@@ -6,22 +6,14 @@
 #include "StudentRecord.h"
 using namespace std;
 
-class StudentRecord
-{
-private:
-	string Id;
-	string FirstName;
-	string LastName;
-	int Age;
-	string PhoneNumber;
-	double Gpa = 0.0;
 
 
-public:
-	StudentRecord()
+
+
+	StudentRecord::StudentRecord()
 	{
 	}
-	StudentRecord(string id, string firstName, string lastName, int age, string phone, double gpa)
+	StudentRecord::StudentRecord(string id, string firstName, string lastName, int age, string phone, double gpa)
 	{
 		this->Id = id;
 		this->FirstName = firstName;
@@ -30,62 +22,62 @@ public:
 		this->PhoneNumber = phone;
 		this->Gpa = gpa;
 	}
-	string getFirst_name()
+	string StudentRecord::getFirst_name()
 	{
 		return this->FirstName;
 	}
-	void setFirst_name(string first_name)
+	void StudentRecord::setFirst_name(string first_name)
 	{
 		this->FirstName = first_name;
 	}
-	string getLast_name()
+	string StudentRecord::getLast_name()
 	{
 		return this->LastName;
 	}
 
-	void setLast_name(string last_name)
+	void StudentRecord::setLast_name(string last_name)
 	{
 		this->LastName = last_name;
 	}
 
-	string getId()
+	string StudentRecord::getId()
 	{
 		return this->Id;
 	}
 
-	void setId(string id)
+	void StudentRecord::setId(string id)
 	{
 		this->Id = id;
 	}
-	int getAge()
+	int StudentRecord::getAge()
 	{
 		return this->Age;
 	}
 
-	void setAge(int age)
+	void StudentRecord::setAge(int age)
 	{
 		this->Age = age;
 	}
-	string getPhone()
+	string StudentRecord::getPhone()
 	{
 		return this->PhoneNumber;
 	}
 
-	void setPhone(string phone)
+	void StudentRecord::setPhone(string phone)
 	{
 		this->PhoneNumber = phone;
 	}
 
-	double getGpa()
+	double StudentRecord::getGpa()
 	{
 		return this->Gpa;
 	}
 
-	void setGpa(double gpa)
+	void StudentRecord::setGpa(double gpa)
 	{
 		this->Gpa = gpa;
 	}
-	void display()
+	void StudentRecord::display()
 	{
 		cout << " Student ID : " << this->getId() << endl;
 		cout << " First Name : " << this->getFirst_name() << endl;
@@ -95,4 +87,3 @@ public:
 		cout << " Gpa : " << this->getGpa() << endl;
 		cout << endl;
 	}
-};

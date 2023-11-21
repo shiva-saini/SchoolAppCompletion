@@ -1,6 +1,6 @@
 // Repository.cpp
 #include "StudentRepository.h"
-#include "StudentRecord.h"
+#include "../myfolder/StudentRecord.h"
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -23,7 +23,7 @@ void StudentRepository::updateStudentInfo(std::vector<StudentRecord>& students, 
 				}
 			}
 
-			std::string filename = "data.csv";
+			std::string filename = "../data.csv";
 			std::ofstream file(filename, std::ios::out);
 			for (StudentRecord student : students)
 			{
@@ -77,7 +77,7 @@ void StudentRepository::updateStudent(StudentRecord updatedStudent)
 vector<StudentRecord> StudentRepository::giveAllStudentsDetails()
 		{
 			ifstream inputFile;
-			inputFile.open("data.csv");
+			inputFile.open("../data.csv");
 			string line;
 			vector<StudentRecord> allStudents;
 			while (getline(inputFile, line))
@@ -180,7 +180,7 @@ void StudentRepository::deleteStudentById(string id)
 				}
 			}
 
-			std::string filename = "data.csv";
+			std::string filename = "../data.csv";
 			std::ofstream file(filename, std::ios::out);
 			for (StudentRecord student : allUpdatedStudents)
 			{
@@ -210,7 +210,7 @@ void StudentRepository::writeStudentToCSV(const std::string& filename, StudentRe
 				}
 			}
 void StudentRepository::addStudentDetails(StudentRecord &student){
-    std::string filename = "data.csv";
+    std::string filename = "../data.csv";
 	writeStudentToCSV(filename, student);
 }
 

@@ -3,8 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
-#include "StudentRecord.h"
-#include "StudentService.h"
+#include "../myfolder/StudentRecord.h"
+#include "../Service/StudentService.h"
 using namespace std;
 
 string generateId()
